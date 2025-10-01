@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rani Recruitment - Where Hiring Meets Royalty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #6A1B9A, #FFD700);
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel-item {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <header class="hero-bg text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <img src="https://via.placeholder.com/300x200/6A1B9A/FFD700?text=Rani+Queen" alt="Rani, the AI Queen orchestrating recruitment" class="mx-auto mb-6 animate-float">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Rani Recruitment</h1>
+            <p class="text-xl md:text-2xl mb-8">Where Hiring Meets Royalty! Let Rani and her AI agents make recruitment fun and fabulous.</p>
+            <div class="space-x-4">
+                <a href="#signup" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg">Join as Job Seeker</a>
+                <a href="#signup" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">Join as Recruiter</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">Why Choose Rani?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/80/FF69B4/FFFFFF?text=👑" alt="Crown icon for matching" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Effortless Matching</h3>
+                    <p>Rani’s agents match skills and culture perfectly – no awkward interviews!</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/80/00BFA5/FFFFFF?text=🎉" alt="Party popper icon for fun" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Fun Interactions</h3>
+                    <p>Quizzes, games, and royal vibes make hiring a delightful adventure.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/80/6A1B9A/FFFFFF?text=🛡️" alt="Shield icon for privacy" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Pleasant & Private</h3>
+                    <p>Secure, stress-free process with a focus on positive experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">How Rani Rules the Realm</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://via.placeholder.com/100/FFD700/6A1B9A?text=1" alt="Step 1: Summon Rani" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Summon Rani</h3>
+                    <p>Sign up and share your hiring or job-seeking quest.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/100/FF69B4/FFFFFF?text=2" alt="Step 2: Agent Assembly" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Agent Assembly</h3>
+                    <p>Rani’s AI crew gets to work: Resume Reviewer, Skill Scout, and more.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/100/00BFA5/FFFFFF?text=3" alt="Step 3: Royal Results" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Royal Results</h3>
+                    <p>Get curated matches and fun feedback in no time.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/100/6A1B9A/FFFFFF?text=4" alt="Step 4: Happily Ever After" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Happily Ever After</h3>
+                    <p>Land your dream role or hire the perfect hero.</p>
+                </div>
+            </div>
+            <a href="#demo" class="mt-8 inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg">Try a Royal Demo!</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">What the Kingdom Says</h2>
+            <div class="carousel">
+                <div class="carousel-item p-6">
+                    <img src="https://via.placeholder.com/80/FFD700/6A1B9A?text=👤" alt="Alex avatar" class="mx-auto mb-4 rounded-full">
+                    <p class="italic mb-2">"Rani turned my job search into an adventure – found my dream role in days!"</p>
+                    <p class="font-semibold">– Alex, the Knighted Developer</p>
+                </div>
+                <div class="carousel-item p-6">
+                    <img src="https://via.placeholder.com/80/FF69B4/FFFFFF?text=👤" alt="Jordan avatar" class="mx-auto mb-4 rounded-full">
+                    <p class="italic mb-2">"Recruiting was a breeze; her agents handled the heavy lifting with charm."</p>
+                    <p class="font-semibold">– Jordan, the Court Recruiter</p>
+                </div>
+                <div class="carousel-item p-6">
+                    <img src="https://via.placeholder.com/80/00BFA5/FFFFFF?text=👤" alt="Sam avatar" class="mx-auto mb-4 rounded-full">
+                    <p class="italic mb-2">"Our team grew stronger without the usual headaches. Truly regal!"</p>
+                    <p class="font-semibold">– Sam, the Empire Builder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-purple-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Join the Royal Court Today!</h2>
+            <p class="text-xl mb-8">Let Rani orchestrate your recruitment revolution – free to start, no crown required!</p>
+            <div class="space-x-4">
+                <a href="#signup" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg">Sign Up as Job Seeker</a>
+                <a href="#signup" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">Sign Up as Recruiter</a>
+                <a href="#learn-more" class="text-white underline hover:no-underline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <div class="container mx-auto px-4">
+            <nav class="mb-4">
+                <a href="#about" class="text-white hover:underline mx-2">About</a>
+                <a href="#contact" class="text-white hover:underline mx-2">Contact</a>
+                <a href="#privacy" class="text-white hover:underline mx-2">Privacy</a>
+            </nav>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#social" aria-label="Twitter"><img src="https://via.placeholder.com/24/FFD700/6A1B9A?text=👑" alt="Twitter crown icon"></a>
+                <a href="#social" aria-label="LinkedIn"><img src="https://via.placeholder.com/24/FF69B4/FFFFFF?text=👑" alt="LinkedIn crown icon"></a>
+            </div>
+            <p>© 2025 Rani Recruitment – Making Hiring Majestic</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple carousel auto-scroll
+        const carousel = document.querySelector('.carousel');
+        let scrollInterval = setInterval(() => {
+            carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            }
+        }, 3000);
+        carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+        carousel.addEventListener('mouseleave', () => {
+            scrollInterval = setInterval(() => {
+                carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+                if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                }
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
